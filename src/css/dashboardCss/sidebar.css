@@ -1,0 +1,232 @@
+/* =========== SIDEBAR =========== */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding: 10px 14px;
+  background: var(--light-background-color);
+  transition: var(--tran-05);
+  z-index: 100;
+}
+
+.sidebar.close {
+  width: 60px;
+}
+
+.sidebar .text {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--sans-serif-poppins);
+  color: var(--text-color);
+  transition: var(--tran-03);
+  white-space: nowrap;
+  opacity: 1;
+}
+
+.sidebar.close .text {
+  opacity: 0;
+}
+
+.sidebar .image {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar li {
+  height: 50px;
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li .icon {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+}
+
+.sidebar li .text,
+.sidebar li .icon {
+  color: var(--text-color);
+  transition: var(--tran-02);
+}
+
+.sidebar header {
+  position: relative;
+}
+
+.sidebar .image-text img {
+  font-family: var(--sans-serif-poppins);
+  color: white;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d7198;
+}
+
+.sidebar header .image-text {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar header .toggle {
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%) rotate(180deg);
+  height: 25px;
+  width: 25px;
+  background-color: var(--light-theme-med-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--light-background-color);
+  font-size: 22px;
+  transition: var(--tran-03);
+}
+
+.sidebar.close header .toggle {
+  transform: translateY(-50%);
+}
+
+body.dark .sidebar header .toggle {
+  transform: rotate(180deg);
+  color: var(--text-color);
+}
+
+.sidebar .menu {
+  margin-top: 35px;
+}
+
+.sidebar .search-box {
+  background-color: var(--theme-dark);
+  border-radius: 6px;
+  transition: var(--tran-05);
+}
+
+.search-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border: none;
+  background-color: var(--theme-dark);
+  border-radius: 6px;
+  transition: var(--tran-05);
+}
+
+.sidebar li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: var(--tran-04);
+}
+
+.sidebar li a:hover {
+  background: var(--light-theme-med-dark);
+}
+
+.sidebar li a:hover .text,
+.sidebar li a:hover .icon {
+  color: var(--light-background-color);
+}
+
+body.dark .sidebar li a:hover .text,
+body.dark .sidebar li a:hover .icon {
+  color: var(--text-color);
+}
+
+.sidebar .menu-bar {
+  height: calc(100% - 70px);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.menu-bar .mode {
+  background-color: var(--theme-dark);
+  position: relative;
+  border-radius: 6px;
+  transition: var(--tran-05);
+}
+
+.menu-bar .mode .moon-sun {
+  height: 50px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar .mode i {
+  position: absolute;
+  transition: var(--tran-03);
+}
+
+.menu-bar .mode i.sun {
+  opacity: 0;
+}
+
+body.dark .menu-bar .mode i.sun {
+  opacity: 1;
+}
+body.dark .menu-bar .mode i.moon {
+  opacity: 0;
+}
+
+.menu-bar .mode .toggle-switch {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-width: 60px;
+  cursor: pointer;
+  background: var(--background-color);
+  border-radius: 6px;
+  transition: var(--tran-05);
+}
+
+.toggle-switch .switch {
+  position: relative;
+  height: 22px;
+  width: 44px;
+  border-radius: 25px;
+  background: var(--toggle-color);
+}
+
+body.dark .mode .toggle-switch {
+  background: var(--theme-light);
+}
+
+.switch::before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  background: var(--light-background-color);
+  transition: var(--tran-03);
+}
+
+body.dark .switch::before {
+  left: 24px;
+}

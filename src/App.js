@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import LandingRoutes from "./components/landingPage/LandingRoutes";
+import DashboardRoutes from "./components/dashboardPage/DashboardRoutes";
+import ExamPageRoutes from "./components/examPage/ExamPageRoutes.jsx";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        {/* For testing Purposes only */}
+        <Route path="*" element={<LandingRoutes />} />
+        <Route path="/dashboard/*" element={<DashboardRoutes />} />
+        <Route path="/exam/*" element={<ExamPageRoutes />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,129 @@
+/* =========== REST OF EXAM STUDENT =========== */
+
+.student-exam {
+  position: relative;
+  height: 100vh;
+  left: 280px;
+  height: auto;
+  width: calc(100% - 280px);
+  background: var(--background-color);
+  transition: var(--tran-05);
+  padding: 2% 10%;
+  font-family: var(--sans-serif-poppins);
+}
+
+.sidebar.close ~ .student-exam {
+  left: 88px;
+  width: calc(100% - 88px);
+}
+
+.student-exam .student-exam-content {
+  display: flex;
+  flex-flow: column;
+  width: calc(100% - 280px);
+}
+
+.student-exam .student-exam-content-title {
+  font-weight: lighter;
+  color: var(--text-color);
+  transition: var(--tran-05);
+}
+
+.student-exam-content h5 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--text-color);
+  transition: var(--tran-05);
+}
+
+.student-exam-content .student-exam-content-current {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--background-color);
+  color: var(--text-color);
+  gap: 20px;
+  transition: var(--tran-05);
+}
+
+.student-exam-content-current .student-exam-element {
+  display: flex;
+  flex-flow: column;
+  background: var(--light-background-color);
+  flex-basis: 30%;
+  margin: 10px 0px;
+  height: 300px;
+  border-radius: 6px;
+  transition: var(--tran-05);
+}
+
+.student-exam-element:hover {
+  transform: scale(1.02);
+  filter: none;
+  -webkit-filter: drop-shadow(0px 4px 10px rgb(206, 205, 205));
+}
+
+body.dark .student-exam-element:hover {
+  filter: none;
+  -webkit-filter: drop-shadow(0px 4px 10px rgb(39, 39, 39));
+}
+
+.student-exam-element .student-exam-element-top {
+  display: flex;
+  position: relative;
+  left: 30px;
+  top: 15px;
+  height: 20%;
+  gap: 15px;
+}
+
+.student-exam-element-top .exam-element-logo {
+  display: flex;
+}
+
+.exam-element-logo img {
+  color: white;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d7198;
+}
+
+.exam-element-title {
+  display: flex;
+  flex-flow: column;
+  margin-right: 40px;
+}
+
+.student-exam-element-mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+}
+
+.student-exam-element-mid .exam-element-details {
+  justify-content: center;
+  align-items: center;
+}
+
+.student-exam-element-bottom {
+  display: flex;
+  height: 20%;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-exam-element-bottom a {
+  position: relative;
+  text-decoration: none;
+  color: var(--text-color);
+  background: var(--background-color);
+  padding: 4% 25%;
+  bottom: 15px;
+  border-radius: 6px;
+  transition: var(--tran-05);
+}

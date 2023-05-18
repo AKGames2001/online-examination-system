@@ -1,0 +1,61 @@
+/* =========== REST OF EXAM =========== */
+.exam {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  /* background-color: #0A4D68; */
+  gap: 50px;
+  font-family: var(--sans-serif-poppins);
+  color: var(--text-color);
+}
+
+.exam-title {
+  display: flex;
+  flex: 2;
+  height: 100%;
+  align-items: center;
+  justify-content: end;
+  border-right: #78b5d4 solid 6px;
+  background: var(--light-background-color);
+}
+
+.exam-title h4 {
+  font-size: 48px;
+  margin-right: 10%;
+}
+
+.exam-instructions {
+  display: flex;
+  flex-flow: column;
+  flex: 5;
+  gap: 30px;
+}
+
+.exam-instructions .instructions ul {
+  display: flex;
+  flex-flow: column;
+  gap: 12px;
+}
+
+.exam-instructions .exam-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.exam-buttons .start,
+.exam-buttons .back {
+  text-decoration: none;
+  padding: 10px 45px;
+  border: var(--text-color) solid 4px;
+  font-size: 18px;
+}
+
+.exam-buttons .start {
+  background: var(--text-color);
+  color: var(--light-background-color);
+}
+
+.exam-buttons .back {
+  color: var(--text-color);
+}

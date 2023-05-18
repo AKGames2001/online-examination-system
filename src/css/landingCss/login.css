@@ -1,0 +1,76 @@
+/* LOGIN FORM */
+
+input {
+  border: none;
+  border-bottom: var(--light-theme-med-dark) solid 1.5px;
+  background-color: var(--light-background-color);
+  width: 300px;
+}
+
+input:focus {
+  border: none;
+  border-bottom: var(--light-theme-med-dark) solid 2px;
+  outline: none;
+}
+
+.login-form p {
+  letter-spacing: 2px;
+}
+
+.login-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  background-color: var(--light-background-color);
+  width: auto;
+  padding: 30px 10px;
+  margin: 100px 25%;
+  /* filter: none;
+  -webkit-filter: drop-shadow(0px 4px 10px rgb(225, 225, 225)); */
+}
+
+.login-title {
+  font-size: x-large;
+  padding: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-flow: column;
+  gap: 35px;
+  padding: 20px;
+}
+
+.login-form .form-element {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
+}
+
+.login-box a,
+span {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-form .forgot-link {
+  font-size: 12px;
+}
+
+.login-form .login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-theme-med-dark);
+  color: var(--light-background-color);
+  text-decoration: none;
+  width: 125px;
+  padding: 15px;
+  margin-left: 27%;
+}

@@ -1,0 +1,124 @@
+/* =========== REST OF ASSESSMENT =========== */
+
+.assessment .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0px 30px;
+  background-color: var(--background-color);
+}
+.assessment .navbar .nav-img {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.assessment .navbar .nav-img img {
+  display: flex;
+  border-radius: 6px;
+  width: 40px;
+}
+
+.assessment .navbar .nav-timer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* =========== EXAM AREA =========== */
+
+.exam-area {
+  display: flex;
+  height: 100vh;
+  background-color: var(--light-background-color);
+}
+
+.exam-area p,
+h4,
+h3,
+li {
+  color: var(--text-color);
+}
+
+.exam-area .exam-question-area {
+  display: flex;
+  flex-flow: column;
+  flex: 5;
+}
+
+.question-area-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+}
+
+.exam-question-area .exam-question {
+  display: flex;
+  border: #0a4d68 solid 1px;
+  border-radius: 0px 12px 12px 0px;
+}
+
+.exam-question .question,
+.exam-question .options {
+  display: flex;
+  height: 500px;
+  padding: 30px;
+  flex: 2;
+}
+
+.options ul {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+}
+
+.exam-questions {
+  display: flex;
+  flex-flow: column;
+  flex: 2;
+}
+
+.question-container-heading {
+  display: flex;
+  justify-content: center;
+  padding: 15px 30px;
+}
+
+.exam-questions .question-container {
+  display: flex;
+  height: 400px;
+  background: var(--background-color);
+  margin: 30px 30px;
+  gap: 15px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.question-container a {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  border-radius: 6px;
+  background: #dedede;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.exam-questions .question-submit {
+  display: flex;
+  justify-content: center;
+  margin: 15px 30px;
+}
+
+.exam-questions .question-submit a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 15px;
+  color: var(--background-color);
+  border-radius: 12px;
+  background: #088395;
+  width: 100%;
+}

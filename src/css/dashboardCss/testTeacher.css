@@ -1,0 +1,145 @@
+/* =========== REST OF TEST TEACHERS =========== */
+
+.test-teacher {
+  position: relative;
+  height: 100vh;
+  left: 280px;
+  height: auto;
+  width: calc(100% - 280px);
+  background: var(--background-color);
+  transition: var(--tran-05);
+  padding: 2% 10%;
+}
+
+.sidebar.close ~ .test-teacher {
+  left: 88px;
+  width: calc(100% - 88px);
+}
+
+.test-teacher .test-teacher-content {
+  display: flex;
+  flex-flow: column;
+  width: calc(100% - 280px);
+}
+
+.test-teacher .test-teacher-title {
+  font-family: var(--sans-serif-poppins);
+  font-weight: lighter;
+  color: var(--text-color);
+  transition: var(--tran-05);
+}
+
+.test-teacher-content .test-teacher-tests {
+  margin-top: 50px;
+  font-family: var(--sans-serif-poppins);
+  color: var(--text-color);
+  transition: var(--tran-05);
+}
+
+.test-teacher-tests .test-teacher-content-header {
+  display: flex;
+  align-items: end;
+  padding: 10px 0px;
+}
+
+.test-teacher-content-header .test-teacher-content-right a {
+  text-decoration: none;
+  color: var(--light-background-color);
+  background: var(--text-color);
+  padding: 10px 14px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: var(--tran-05);
+}
+
+.test-teacher-tests .test-teacher-content-details {
+  display: flex;
+  flex-flow: column;
+  margin-top: 20px;
+  height: 30px;
+  justify-content: space-between;
+  background-color: var(--light-background-color);
+  padding: 15px 0px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--tran-05);
+}
+
+.test-teacher-content-details.active {
+  height: 150px;
+}
+
+.test-teacher-content-details .test-teacher-content-top {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 100%;
+}
+
+.test-teacher-content-details .test-teacher-content-description {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+  background: var(--light-background-color);
+  font-size: 14px;
+  display: none;
+  transition: var(--tran-05);
+}
+
+.test-teacher-content-details.active .test-teacher-content-description {
+  display: flex;
+}
+
+.test-teacher-content-description-left {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  width: 22%;
+}
+
+.test-teacher-content-description-mid {
+  display: flex;
+  flex-flow: column;
+  width: 40%;
+  gap: 10px;
+}
+
+.test-teacher-content-description-right {
+  display: flex;
+  flex-flow: column;
+  width: 30%;
+  gap: 10px;
+}
+
+.test-teacher-tests .test-teacher-content-left {
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  padding-left: 35px;
+}
+
+.test-teacher-tests .test-teacher-content-left p {
+  display: flex;
+}
+
+.test-teacher-content-left .left-col {
+  flex: 2;
+}
+
+.test-teacher-content-left .right-col {
+  flex: 10;
+}
+
+.test-teacher-tests .test-teacher-content-right {
+  display: flex;
+  gap: 15px;
+  width: 20%;
+  padding-right: 30px;
+  justify-content: space-evenly;
+}
+
+.test-teacher-content-right i {
+  font-size: 20px;
+}

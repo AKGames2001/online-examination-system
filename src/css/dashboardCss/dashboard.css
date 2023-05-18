@@ -1,0 +1,129 @@
+/* =========== REST OF DASHBOARD =========== */
+
+.dashboard {
+  position: relative;
+  height: 100vh;
+  left: 280px;
+  height: auto;
+  width: calc(100% - 280px);
+  background: var(--background-color);
+  transition: var(--tran-05);
+  padding: 2% 10%;
+}
+
+.sidebar.close ~ .dashboard {
+  left: 88px;
+  width: calc(100% - 88px);
+}
+
+.dashboard .dashboard-content {
+  display: flex;
+  flex-flow: column;
+  width: calc(100% - 280px);
+}
+
+.dashboard .dashboard-title {
+  font-family: var(--sans-serif-poppins);
+  font-weight: lighter;
+  color: var(--text-color);
+  transition: var(--tran-05);
+}
+
+.dashboard .dashboard-profile {
+  display: flex;
+  flex-flow: row;
+  background-color: var(--light-background-color);
+  margin: 60px 0px;
+  height: 250px;
+  width: 80%;
+  border-radius: 10px;
+  justify-content: left;
+  align-items: center;
+  gap: 20px;
+  transition: var(--tran-05);
+}
+
+.dashboard-profile .profile-img {
+  padding: 0px 40px;
+  margin-left: 30px;
+}
+
+.dashboard-profile .profile-img img {
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
+}
+
+.dashboard-profile .profile-desc {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  color: var(--text-color);
+  transition: var(--tran-05);
+}
+
+.profile-desc .profile-name p {
+  font-size: 36px;
+  font-family: var(--sans-serif-poppins);
+}
+
+.profile-desc .profile-details p {
+  font-size: 16px;
+  font-family: var(--sans-serif-poppins);
+}
+
+.dashboard-content h5 {
+  font-family: var(--sans-serif-poppins);
+  font-size: 16px;
+  color: var(--text-color);
+  margin: 0px;
+  padding: 0px;
+  transition: var(--tran-05);
+}
+
+.dashboard-activity {
+  margin: 30px 0px;
+  height: 100px;
+  width: 80%;
+  border-radius: 10px;
+  background: var(--light-background-color);
+  transition: var(--tran-05);
+}
+
+.dashboard-activity .activity-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.activity-details .activity-item {
+  display: flex;
+  margin: 28px 0px;
+  width: 18%;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--sans-serif-poppins);
+  color: var(--text-color);
+}
+
+.activity-details .activity-item-icon {
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: var(--text-color-2) solid 1px;
+  transition: var(--tran-05);
+}
+
+.activity-details .activity-item .icon {
+  font-size: 24px;
+}
+
+.activity-item .activity-item-details {
+  display: flex;
+  flex-flow: column;
+  transition: var(--tran-05);
+}
+
+.activity-item .activity-item-details .item-title {
+  color: var(--text-color-2);
+}
