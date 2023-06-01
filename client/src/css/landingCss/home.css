@@ -22,13 +22,13 @@
 .heading-title h3 {
   font-size: 60px;
   font-family: var(--serif-font);
-  color: var(--light-theme-dark);
+  color: var(--text-color);
 }
 
 .heading-title p {
   font-size: 16px;
   font-family: var(--sans-serif-montserrat);
-  color: var(--light-theme-med-dark);
+  color: var(--text-color);
 }
 
 .heading-title a {

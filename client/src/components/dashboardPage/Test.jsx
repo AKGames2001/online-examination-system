@@ -30,8 +30,8 @@ function Test() {
           <div className="test-teacher-tests">
             <div className="test-teacher-content-header">
               <div className="test-teacher-content-left">
-                <p className="left-col">Subject</p>
-                <p className="right-col">name</p>
+                <h3 className="left-col">Subject</h3>
+                <h3 className="right-col">Name</h3>
               </div>
               <div className="test-teacher-content-right">
                 <Link to="/dashboard/test/add_question">+ Add question</Link>
@@ -65,7 +65,7 @@ function Test() {
                 </div>
               </div>
             </div>
-            <div className="test-teacher-content-details">
+            <div className="test-teacher-content-details active">
               <div className="test-teacher-content-top">
                 <div className="test-teacher-content-left">
                   <p className="left-col">Physics</p>
@@ -93,7 +93,7 @@ function Test() {
                 </div>
               </div>
             </div>
-            <div className="test-teacher-content-details">
+            <div className="test-teacher-content-details active">
               <div className="test-teacher-content-top">
                 <div className="test-teacher-content-left">
                   <p className="left-col">Chem</p>
@@ -121,7 +121,7 @@ function Test() {
                 </div>
               </div>
             </div>
-            <div className="test-teacher-content-details">
+            <div className="test-teacher-content-details active">
               <div className="test-teacher-content-top">
                 <div className="test-teacher-content-left">
                   <p className="left-col">Maths</p>

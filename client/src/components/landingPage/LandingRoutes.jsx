@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./navbar";
 import Home from "./Home";
 import Login from "./Login";
@@ -7,6 +7,7 @@ import About from "./About";
 import Pricing from "./Pricing";
 import Contact from "./Contact";
 import Register from "./Register";
+import Footer from "./Footer";
 
 function LandingRoutes() {
   return (
@@ -20,6 +21,7 @@ function LandingRoutes() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </>
   );
 }

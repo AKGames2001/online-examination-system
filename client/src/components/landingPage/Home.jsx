@@ -15,7 +15,7 @@ function Home() {
             earum. Aut, eveniet. Corporis.
           </p>
           <div className="buttons"></div>
-          <a href="#">Sign Up</a>
+          <a href="/register">Sign Up</a>
         </div>
         <div className="heading-img">
           <img src={heading} alt="online_exam_image" />

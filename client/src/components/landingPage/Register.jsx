@@ -20,6 +20,18 @@ function Register() {
             <input type="text" name="username" />
           </div>
           <div className="form-element">
+            <p>Email</p>
+            <input type="text" name="email" />
+          </div>
+          <div className="form-element">
+            <p>Phone Number</p>
+            <input type="text" name="phoneNumber" />
+          </div>
+          <div className="form-element">
+            <p>Country</p>
+            <input type="text" name="phoneNumber" />
+          </div>
+          <div className="form-element">
             <p>Password</p>
             <input type="password" name="password" />
           </div>

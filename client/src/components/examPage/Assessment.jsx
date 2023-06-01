@@ -1,21 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../css/examCss/assessment.css";
-import logoImage from "../../resources/S.png";
+import ExamNavBar from "./ExamNavBar";
 
 function Assessment() {
   return (
     <div className="assessment">
-      <nav class="navbar">
-        <div class="nav-img">
-          <img src={logoImage} alt="" />
-          <h4>Shoyo</h4>
-        </div>
-        <div class="nav-timer">
-          <h3>Time : </h3>
-          <p>99:99</p>
-        </div>
-      </nav>
+      <ExamNavBar pageName="assessment" />
       <div class="exam-area">
         <div class="exam-question-area">
           <div class="question-area-heading">
