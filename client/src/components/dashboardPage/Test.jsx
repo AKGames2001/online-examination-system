@@ -9,8 +9,8 @@ function Test() {
   //     return something;
   // }
   useEffect(() => {
-    const details = document.querySelector(".test-teacher-content-details"),
-      activateBtn = document.querySelector(".test-teacher-content-top");
+    const details = document.querySelector(".test-teacher-content-details");
+    const activateBtn = document.querySelector(".test-teacher-content-top");
 
     activateBtn.addEventListener("click", () => {
       details.forEach((element) => {

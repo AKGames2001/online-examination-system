@@ -25,19 +25,19 @@ function Assessment() {
             <div class="options">
               <ul>
                 <li>
-                  <input type="radio" name="opt1" id="" />
+                  <input type="radio" name="opt" id="" />
                   Option 1
                 </li>
                 <li>
-                  <input type="radio" name="opt2" id="" />
+                  <input type="radio" name="opt" id="" />
                   Option 2
                 </li>
                 <li>
-                  <input type="radio" name="opt3" id="" />
+                  <input type="radio" name="opt" id="" />
                   Option 3
                 </li>
                 <li>
-                  <input type="radio" name="opt4" id="" />
+                  <input type="radio" name="opt" id="" />
                   Option 4
                 </li>
               </ul>
