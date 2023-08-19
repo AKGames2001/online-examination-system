@@ -10,13 +10,13 @@ function ExamNavBar(props) {
   }
   return (
     <>
-      <nav class="navbar">
-        <div class="nav-img">
+      <nav className="navbar">
+        <div className="nav-img">
           <img src={logoImage} alt="" />
           <h4>Shoyo</h4>
         </div>
         {timeSlot ? (
-          <div class="nav-timer">
+          <div className="nav-timer">
             <h3>Time : </h3>
             <p>99:99</p>
           </div>

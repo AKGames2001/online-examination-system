@@ -28,10 +28,15 @@ function Login() {
 
     await fetch("http://localhost:5000/members")
       .then((res) => res.json())
-      .then((data) => {
-        setAuthVal(data);
-        console.log(data);
-      });
+      .then(
+        (data) => {
+          setAuthVal(data);
+          console.log(data);
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
 
     // let x = await fetch("http://localhost:5000/members");
     // setAuthVal = await x.text();

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../../css/examCss/assessment.css";
 import ExamNavBar from "./ExamNavBar";
@@ -7,14 +7,14 @@ function Assessment() {
   return (
     <div className="assessment">
       <ExamNavBar pageName="assessment" />
-      <div class="exam-area">
-        <div class="exam-question-area">
-          <div class="question-area-heading">
+      <div className="exam-area">
+        <div className="exam-question-area">
+          <div className="question-area-heading">
             <h3>Subject : </h3>
             <p>Sub Name</p>
           </div>
-          <div class="exam-question">
-            <div class="question">
+          <div className="exam-question">
+            <div className="question">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Accusantium corporis, repudiandae placeat in dolorum veniam,
@@ -22,7 +22,7 @@ function Assessment() {
                 eligendi sit iure, debitis nesciunt quas!
               </p>
             </div>
-            <div class="options">
+            <div className="options">
               <ul>
                 <li>
                   <input type="radio" name="opt" id="" />
@@ -44,15 +44,23 @@ function Assessment() {
             </div>
           </div>
         </div>
-        <div class="exam-questions">
-          <div class="question-container-heading">
+        <div className="exam-questions">
+          <div className="question-container-heading">
             <h4>Questions</h4>
           </div>
-          <div class="question-container">
-            <Link to="">1</Link>
-            <Link to="">2</Link>
-            <Link to="">3</Link>
-            <Link to="">4</Link>
+          <div className="question-container">
+            <Link to="" name="num1">
+              1
+            </Link>
+            <Link to="" name="num2">
+              2
+            </Link>
+            <Link to="" name="num3">
+              3
+            </Link>
+            <Link to="" name="num4">
+              4
+            </Link>
           </div>
           <div class="question-submit">
             <Link to="/exam/result">Submit</Link>
@@ -64,3 +72,50 @@ function Assessment() {
 }
 
 export default Assessment;
+
+// function Assessment() {
+//   let [queNumber, setQueNumber] = useState(1);
+
+//   function clickHandler(event) {
+//     setQueNumber = Number(event.target.name);
+//   }
+
+//   return (
+//     <div className="assessment">
+//       <ExamNavBar pageName="assessment" />
+//       <div className="exam-area">
+//         <div className="exam-question-area">
+//           <div className="question-area-heading">
+//             <h3>Subject : </h3>
+//             <p>Sub Name</p>
+//           </div>
+//           <div className="exam-question">
+//             <QuestionMapper number={queNumber} />
+//           </div>
+//         </div>
+//         <div className="exam-questions">
+//           <div className="question-container-heading">
+//             <h4>Questions</h4>
+//           </div>
+//           <div className="question-container">
+//             <Link to="" onClick={clickHandler} name=")1">
+//               1
+//             </Link>
+//             <Link to="" onClick={clickHandler} name=")2">
+//               2
+//             </Link>
+//             <Link to="" onClick={clickHandler} name=")3">
+//               3
+//             </Link>
+//             <Link to="" onClick={clickHandler} name=")4">
+//               4
+//             </Link>
+//           </div>
+//           <div className="question-submit">
+//             <Link to="/exam/result">Submit</Link>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
